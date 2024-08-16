@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Our Products</h1>
+    </header>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="assets/images/Victoria Garden City, Lekki Lagos 320M 5 Bedroom Fully Detached Duplex House with Swimming Pool, Gym.jpeg" alt="Product 1">
+            <h2>Product Name 1</h2>
+            <p class="price">$19.99</p>
+            <p class="description">A brief description of the product. This can include features, uses, and benefits.</p>
+             <!-- Hidden Action Container -->
+            <div class="action-container" style="display: none;">
+                <button class="icon-button" aria-label="Save">
+                    <i class="fas fa-bookmark"></i>
+                </button>
+                <button class="icon-button" aria-label="View">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <button class="icon-button" aria-label="Message">
+                    <i class="fas fa-envelope"></i>
+                </button>
+            </div>
+      
+            <!-- More Actions Button -->
+            <button class="single-action-button" aria-label="More Actions" onclick="toggleActions(this)">
+                <i class="fas fa-ellipsis-h"></i>
+            </button>
+        </div>
+
+
+        <div class="product-card">
+            <img src="assets/images/Z Fold 4 Available for Sale.jpeg" alt="Product 2">
+            <h2>Product Name 2</h2>
+            <p class="price">$29.99</p>
+            <p class="description">A brief description of the product. This can include features, uses, and benefits.</p>
+             <!-- Hidden Action Container -->
+            <div class="action-container" style="display: none;">
+                <button class="icon-button" aria-label="Save">
+                    <i class="fas fa-bookmark"></i>
+                </button>
+                <button class="icon-button" aria-label="View">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <button class="icon-button" aria-label="Message">
+                    <i class="fas fa-envelope"></i>
+                </button>
+            </div>
+      
+            <!-- More Actions Button -->
+            <button class="single-action-button" aria-label="More Actions" onclick="toggleActions(this)">
+                <i class="fas fa-ellipsis-h"></i>
+            </button>
+        </div>
+
+
+        <div class="product-card">
+            <img src="assets/images/LEXUS RX 350, AVAILABLE FOR SALE IN _DAIKESGLOBAL_.jpeg" alt="Product 3">
+            <h2>Product Name 3</h2>
+            <p class="price">$39.99</p>
+            <p class="description">A brief description of the product. This can include features, uses, and benefits.</p>
+             <!-- Hidden Action Container -->
+            <div class="action-container" style="display: none;">
+                <button class="icon-button" aria-label="Save">
+                    <i class="fas fa-bookmark"></i>
+                </button>
+                <button class="icon-button" aria-label="View">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <button class="icon-button" aria-label="Message">
+                    <i class="fas fa-envelope"></i>
+                </button>
+            </div>
+      
+            <!-- More Actions Button -->
+            <button class="single-action-button" aria-label="More Actions" onclick="toggleActions(this)">
+                <i class="fas fa-ellipsis-h"></i>
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/Laptops _DELL_ HP_DATARECOVERY (@laptopaffairsng)….jpeg" alt="Product 4">
+            <h2>Product Name 4</h2>
+            <p class="price">$49.99</p>
+            <p class="description">A brief description of the product. This can include features, uses, and benefits.</p>
+             <!-- Hidden Action Container -->
+            <div class="action-container" style="display: none;">
+                <button class="icon-button" aria-label="Save">
+                    <i class="fas fa-bookmark"></i>
+                </button>
+                <button class="icon-button" aria-label="View">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <button class="icon-button" aria-label="Message">
+                    <i class="fas fa-envelope"></i>
+                </button>
+            </div>
+      
+            <!-- More Actions Button -->
+            <button class="single-action-button" aria-label="More Actions" onclick="toggleActions(this)">
+                <i class="fas fa-ellipsis-h"></i>
+            </button>
+        </div>
+
+
+        <div class="product-card">
+            <img src="assets/images/e5e102ef-33a6-45f7-84d5-807e0f60130a.jpeg" alt="Product 1">
+            <h2>Product Name 4</h2>
+            <p class="price">$19.99</p>
+            <p class="description">A brief description of the product. This can include features, uses, and benefits.</p>
+            
+            <!-- Hidden Action Container -->
+            <div class="action-container" style="display: none;">
+                <button class="icon-button" aria-label="Save">
+                    <i class="fas fa-bookmark"></i>
+                </button>
+                <button class="icon-button" aria-label="View">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <button class="icon-button" aria-label="Message">
+                    <i class="fas fa-envelope"></i>
+                </button>
+            </div>
+        
+            <!-- More Actions Button -->
+            <button class="single-action-button" aria-label="More Actions" onclick="toggleActions(this)">
+                <i class="fas fa-ellipsis-h"></i>
+            </button>
+        </div>
+        
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Brand Name. All rights reserved.</p>
+    </footer>
+
+
+<script>
+function toggleActions(button) {
+    const productCard = button.closest('.product-card');
+    const actionContainer = productCard.querySelector('.action-container');
+    
+    if (actionContainer.style.display === 'none' || actionContainer.style.display === '') {
+        actionContainer.style.display = 'flex';
+    } else {
+        actionContainer.style.display = 'none';
+    }
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
