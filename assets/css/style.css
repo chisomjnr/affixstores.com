@@ -429,11 +429,11 @@ button, a { transition: var(--transition); }
   font-size: var(--fs-6);
   font-weight: var(--fw-700);
   padding: 7px 15px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .header-top-btn:is(:hover, :focus) { 
-  --orange-soda: hsl(276, 100%, 74%); 
+  --orange-soda: #000000; 
  }
 
 .header-bottom {
@@ -1525,84 +1525,21 @@ button, a { transition: var(--transition); }
 
 
 /*-----------------------------------*\
-  #FEATURES
+  #FEATURE
 \*-----------------------------------*/
 
-.features {
-  background: var(--cultured-2);
-  padding-block: var(--section-padding);
-}
+.section.feature { padding-block-start: 0; }
 
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px 20px;
-}
-
-.features-list > li { width: calc(50% - 10px); }
-
-.features-card {
-  position: relative;
-  background: var(--white);
-  padding: 40px 15px;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  box-shadow: var(--shadow-1);
-}
-
-.features-card:is(:hover, :focus) { background: var(--orange-soda); }
-
-.features-card .card-icon {
-  background: var(--seashell);
-  color: var(--orange-soda);
-  width: 60px;
-  height: 60px;
+.feature-list {
   display: grid;
-  place-items: center;
-  border-radius: 50%;
-  font-size: 28px;
+  gap: 60px;
+  margin-block-end: 60px;
 }
 
-.features-card .card-icon ion-icon { --ionicon-stroke-width: 20px; }
+.feature .btn { margin-inline: auto; }
 
-.features-card .card-title {
-  color: var(--dark-jungle-green);
-  font-family: var(--ff-poppins);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-600);
-  text-align: center;
-  transition: var(--transition);
-}
 
-.features-card:is(:hover, :focus) .card-title { color: var(--white); }
 
-.features-card .card-btn {
-  background: var(--black);
-  color: var(--white);
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  font-size: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px hsla(219, 56%, 21%, 0.1);
-  transition: var(--transition);
-}
-
-.features-card:is(:hover, :focus) .card-btn { 
-  color: var(--orange-soda);
-  background: white;
-}
 
 
 
